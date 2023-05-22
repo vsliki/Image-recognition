@@ -106,7 +106,7 @@ The $\verb|{Input, Correct Output}|$ pair is the data I want the network to reco
 <ul>
   <li>The $\texttt{Inputs}$ are matrices $X \in \mathbb{R}^{3\times5}$ corresponding to noisy images of each digit. I represent these matrices in a vector $x \in \mathbb{R}^{15}$ concatenating the rows of $X$. This is the input layer of the network.</li>
   <li>The $\verb|Correct Outputs|$ are matrices $D \in \mathbb{R}^{3\times5}$ corresponding to the images of each digit in $\verb|Input|$, but not noisy.</li>
-  <li>The output value of the network, written $\textit{output}, is a vector $y \in \mathbb{R}^{10}$.</li>
+  <li>The output value of the network, written $\textit{output}$, is a vector $y \in \mathbb{R}^{10}$.</li>
 </ul>
 
 To be able to compare this one to the $\verb|Correct Outputs|$, I followed the model proposed by *Phil Kim* (1.p.93), that is to say: define the different possible outputs in the form of vectors d corresponding to the 10 classes of figures represented by the matrices $D$:
