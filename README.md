@@ -111,7 +111,7 @@ The $\verb|{Input, Correct Output}|$ pair is the data I want the network to reco
   <li>The output value of the network, written $\textit{output}$, is a vector $y \in \mathbb{R}^{10}$.</li>
 </ul>
 
-To be able to compare this one to the $\verb|Correct Outputs|$, I followed the model proposed by *Phil Kim* (1.p.93), that is to say: define the different possible outputs in the form of vectors d corresponding to the 10 classes of figures represented by the matrices $D$:
+To be able to compare this one to the $\verb|Correct Outputs|$, I followed the model proposed by *Phil Kim* (1.p.93), that is to say: define the different possible outputs in the form of vectors $d$ corresponding to the 10 classes of figures represented by the matrices $D$:
 
 ![Vectors corresponding to the $\verb|Correct Output|$ matrices $D$](https://github.com/vsliki/Image-recognition/blob/main/outputD.png)
 
