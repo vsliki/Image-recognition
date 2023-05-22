@@ -29,7 +29,7 @@ My model, as I have built it, is composed of several different structures and ca
 
 ![Representation of my neural network.](https://github.com/vsliki/Image-recognition/blob/main/NN.png)
 
-**Remark:** The network is here composed of 3 layers, the input layer
+**Remark 2.1:** The network is here composed of 3 layers, the input layer
 being considered as layer 0.
 
 <ol>
@@ -69,7 +69,18 @@ being considered as layer 0.
   <li>Network adaptations:</li>
   <ul>
     <li>$\Delta W_k$: adjustment of matrix $W_k$, $k = 1, 2, 3$. </li>
-    <li>\Delta b_k$: adjustment of vector $b_k$, $k = 1, 2, 3$.</li>
+    <li>$\Delta b_k$: adjustment of vector $b_k$, $k = 1, 2, 3$.</li>
   </ul>
 </ol>
+
+**Remark 2.2:** In order to standardize the data of this work with those of the implementation, I used the following notations:
+<ul>
+  <li>$x := y_0$,</li>
+  <li>$y := y_3$,</li>
+  <li>$v := v_3$,</li>
+  <li>$e := e_3$,</li>
+  <li>$\delta := \delta_3$.</li>
+</ul>
+
+
 
