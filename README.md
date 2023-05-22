@@ -48,17 +48,18 @@ being considered as layer 0.
   — b2 ∈ R20: the bias added to the weighted sum of the elements of the 1st intermediate layer.
   — b3 ∈ R10: the bias added to the weighted sum of the elements of the second intermediate layer.
   — α ∈ R the learning rate. (see Definition 2.5)
-3. Activation of neurons in the different layers:
+  
+  <li>Activation of neurons in the different layers:</li>
   — σ: the Sigmoid activation function. o (see section 2.1.4) 
   — σ ̃: the Softmax activation function.
-4. Data circulating in the network:
+  <li>Data circulating in the network:</li>
   — v1 ∈ R30: the output value of the input layer. It corresponds to the weighted sum of the neurons of the input layer.
   — v2 ∈ R20: the output value of the 1st intermediate layer. It corresponds to the weighted sum of the neurons of this layer.
   — v:= v3 ∈ R10: the output value of the second intermediate layer. It corresponds to the weighted sum of the elements of this second intermediate layer.
-5. Errors: (see section 2.2)
+  <li>Errors: (see section 2.2)</li>
   — ek: errors propagated respectively to layers k = 1, 2, 3. 
   — δk: deltas propagated respectively to layers k = 1, 2, 3.
-6. Network adaptations:
+  <li>Network adaptations:</li>
   — ∆Wk: adjustment of matrix Wk, k = 1, 2, 3. 
   — ∆bk: adjustment of vector bk, k = 1, 2, 3.
 </ol>
