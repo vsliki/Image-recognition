@@ -28,3 +28,35 @@ A neural network is organized into several layers of neurons:
 My model, as I have built it, is composed of several different structures and can be schematized as follows:
 
 ![Representation of my neural network.](https://github.com/vsliki/Image-recognition/blob/main/NN.png)
+
+**Remark:** The network is here composed of 3 layers, the input layer
+being considered as layer 0.
+
+1. The different layers:
+  — x:= y0 ∈ R15: the input layer of the network.
+  — y1 ∈ R30: the first intermediate layer of the network. 
+  — y2 ∈ R20: the second intermediate layer of the network. 
+  — y:= y3 ∈ R10: the output layer of the network.
+2. The parameters associated with the different layers:
+  — W1 ∈ R30×15: The matrix containing the weights of the links between the entry layer and the 1st intermediate layer.
+  — W2 ∈ R20×30: The matrix containing the weights of the links between the 1st and 2nd intermediate layers.
+  — W3 ∈ R10×20: The matrix containing the weights of the links between the second intermediate layer and the output layer.
+  — b1 ∈ R30: the bias added to the weighted sum of the elements of the input layer.
+  — b2 ∈ R20: the bias added to the weighted sum of the elements of the 1st intermediate layer.
+  — b3 ∈ R10: the bias added to the weighted sum of the elements of the second intermediate layer.
+  — α ∈ R the learning rate. (see Definition 2.5)
+3. Activation of neurons in the different layers:
+  — σ: the Sigmoid activation function. o (see section 2.1.4) 
+  — σ ̃: the Softmax activation function.
+4. Data circulating in the network:
+  — v1 ∈ R30: the output value of the input layer. It corresponds to the weighted sum of the neurons of the input layer.
+  — v2 ∈ R20: the output value of the 1st intermediate layer. It corresponds to the weighted sum of the neurons of this layer.
+  — v:= v3 ∈ R10: the output value of the second intermediate layer. It corresponds to the weighted sum of the elements of this second intermediate layer.
+5. Errors: (see section 2.2)
+  — ek: errors propagated respectively to layers k = 1, 2, 3. 
+  — δk: deltas propagated respectively to layers k = 1, 2, 3.
+6. Network adaptations:
+  — ∆Wk: adjustment of matrix Wk, k = 1, 2, 3. 
+  — ∆bk: adjustment of vector bk, k = 1, 2, 3.
+
+
