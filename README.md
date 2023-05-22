@@ -93,4 +93,7 @@ To be able to create and train a neural network, I use a set of data, called a <
 **Definition 2.2:** A <ins>training set</ins> is a finite set of known data used to perfect a model by adjusting its parameters, in order to obtain a good estimate of unknown data.
 **Definition 2.3:** A <ins>validation set</ins> is a finite set of data, used to verify the proper functioning of the network. The content of this set is different from the training set, but is nevertheless known.
 
+I want to create a model allowing to recognize images representing the numbers $0,1,...,9$ on a grid. To be able to create a network like this, I proceed according to the following steps:
+<ol>
+  <li>First, I use the data from the training set. I insert the $\textt{Inputs}$ of this set into the network, and, to obtain a result of the model sufficiently close to the $\texttt{Correct Outputs}$, I adapt the parameters of the network.</li>
 
