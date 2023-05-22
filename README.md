@@ -104,8 +104,8 @@ I want to create a model allowing to recognize images representing the numbers $
  #### 2.1.2 Inputs and outputs
 The $\verb|{Input, Correct Output}|$ pair is the data I want the network to recognize. This data is stored in the form of matrices. For a purely computational reason, it is necessary to adapt these matrices and transform them into vectors. Thus, we have:
 <ul>
-  <li>The $\texttt{Inputs}$ are matrices $X \in \mathbb{R}^{3\times5}$ corresponding to noisy images of each digit. I represent these matrices in a vector $x \in \mathb{R}^{15}$ concatenating the rows of $X$. This is the input layer of the network.</li>
-  <li>The $\verb|Correct Outputs|$ are matrices $D \in \mathbb{R}^{3\times5} corresponding to the images of each digit in $\texttt{Input}$, but not noisy.</li>
+  <li>The $\texttt{Inputs}$ are matrices $X \in \mathbb{R}^{3\times5}$ corresponding to noisy images of each digit. I represent these matrices in a vector $x \in \mathbb{R}^{15}$ concatenating the rows of $X$. This is the input layer of the network.</li>
+  <li>The $\verb|Correct Outputs|$ are matrices $D \in \mathbb{R}^{3\times5}$ corresponding to the images of each digit in $\texttt{Input}$, but not noisy.</li>
   <li>The output value of the network, written *output*, is a vector $y \in \mathbb{R}^{10}$.</li>
 </ul>
 To be able to compare this one to the $\verb|Correct Outputs|$, I followed the model proposed by *Phil Kim* [1, p.93], that is to say: define the different possible outputs in the form of vectors d corresponding to the 10 classes of figures represented by the matrices $D$:
