@@ -15,3 +15,14 @@ I would like here to explain the construction and learning of such a network, th
 
 
 In order to structure the path to carry out the implementation, I will first recall the structure of a neural network as well as its functioning, then explain the learning method of such a network, via the resolution of an optimization problem using the **Stochastic Gradient Descent (SGD) algorithm**. I will define this problem according to two different cost functions: the **least squares method** and the **cross entropy** in order to compare them and choose the most optimal. Thereafter, I will describe step by step the Matlab codes which allowed me to create my model, then I will study the results obtained after modifying the various parameters of the network. Finally, I will conclude this work with the difficulties and questions I faced when designing this artificial intelligence.
+
+## Theoretical bases: Neural networks
+To explain how a neural network works, I will take the network I have implemented as an example, in order to become familiar with the notations used in  the implementation section.
+
+
+**Definition:** A neural network is a model whose goal is to build a function *φ*, called a <ins>learning function</ins>, which correctly classifies training data, in order to be able to accurately predict unknown data.
+A neural network is organized into several layers of neurons: 
+1. The input layer.
+2. The intermediate layer or layers (hidden layers).
+3. The output layer.
+My model, as I have built it, is composed of several different structures and can be schematized as follows:
