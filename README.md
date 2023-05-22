@@ -25,6 +25,8 @@ A neural network is organized into several layers of neurons:
 1. The input layer.
 2. The intermediate layer or layers (hidden layers).
 3. The output layer.
+
+
 My model, as I have built it, is composed of several different structures and can be schematized as follows:
 
 ![Representation of my neural network.](https://github.com/vsliki/Image-recognition/blob/main/NN.png)
