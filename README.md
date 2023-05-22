@@ -47,7 +47,7 @@ being considered as layer 0.
       <li>$W_3 \in \mathbb{R}^{10\times20}$: The matrix containing the weights between the second intermediate layer and the output layer.</li>
       <li>$b_1 \in \mathbb{R}^{30}$: the bias added to the weighted sum of the elements of the input layer.</li>
       <li>$b_2 \in \mathbb{R}^{20}$: the bias added to the weighted sum of the elements of the 1st intermediate layer.</li>
-      <li>$b_3 \in \athbb{R}^{10}$: the bias added to the weighted sum of the elements of the second intermediate layer.</li>
+      <li>$b_3 \in \mathbb{R}^{10}$: the bias added to the weighted sum of the elements of the second intermediate layer.</li>
       <li>$\alpha \in \mathbb{R}$: the learning rate. (see Definition 2.5)</li>
     </ul>
   <li>Activation of neurons in the different layers: (see section 2.1.4)</li>
@@ -57,19 +57,19 @@ being considered as layer 0.
      </ul>
   <li>Data circulating in the network:</li>
     <ul>
-      <li>v1 ∈ R30: the output value of the input layer. It corresponds to the weighted sum of the neurons of the input layer.</li>
-      <li>v2 ∈ R20: the output value of the 1st intermediate layer. It corresponds to the weighted sum of the neurons of this layer.</li>
-      <li>v:= v3 ∈ R10: the output value of the second intermediate layer. It corresponds to the weighted sum of the elements of this second intermediate layer.</li>
+      <li>$v_1 \in \mathbb{R}^{30}$: the output value of the input layer. It corresponds to the weighted sum of the neurons of the input layer.</li>
+      <li>$v_2 \in \mathbb{R}^{20}$: the output value of the 1st intermediate layer. It corresponds to the weighted sum of the neurons of this layer.</li>
+      <li>$v:= v_3 \in \mathbb{R}^{10}$: the output value of the second intermediate layer. It corresponds to the weighted sum of the elements of this second intermediate layer.</li>
     </ul>
   <li>Errors: (see section 2.2)</li>
     <ul>
-      <li>ek: errors propagated respectively to layers k = 1, 2, 3. </li>
-      <li>δk: deltas propagated respectively to layers k = 1, 2, 3.</li>
+      <li>$e_k$: errors propagated respectively to layers $k = 1, 2, 3$. </li>
+      <li>$\delta_k$: deltas propagated respectively to layers $k = 1, 2, 3$.</li>
     </ul>
   <li>Network adaptations:</li>
   <ul>
-    <li>∆Wk: adjustment of matrix Wk, k = 1, 2, 3. </li>
-    <li>∆bk: adjustment of vector bk, k = 1, 2, 3.</li>
+    <li>$\Delta W_k$: adjustment of matrix $W_k$, $k = 1, 2, 3$. </li>
+    <li>\Delta b_k$: adjustment of vector $b_k$, $k = 1, 2, 3$.</li>
   </ul>
 </ol>
 
