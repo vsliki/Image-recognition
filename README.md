@@ -115,3 +115,6 @@ To be able to compare this one to the $\verb|Correct Outputs|$, I followed the m
 
 ![Vectors corresponding to the $\verb|Correct Output|$ matrices $D$](https://github.com/vsliki/Image-recognition/blob/main/outputD.png)
 
+See real_data.m, code that translates the matrices $D$ to the $d$ vectors:
+[https://github.com/vsliki/Image-recognition/blob/main/real_data.m]
+
