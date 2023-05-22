@@ -95,5 +95,9 @@ To be able to create and train a neural network, I use a set of data, called a <
 
 I want to create a model allowing to recognize images representing the numbers $0,1,...,9$ on a grid. To be able to create a network like this, I proceed according to the following steps:
 <ol>
-  <li>First, I use the data from the training set. I insert the $\textt{Inputs}$ of this set into the network, and, to obtain a result of the model sufficiently close to the $\texttt{Correct Outputs}$, I adapt the parameters of the network.</li>
+  <li>First, I use the data from the training set. I insert the $\texttt{Inputs}$ of this set into the network, and, to obtain a result of the model sufficiently close to the $\texttt{Correct Outputs}$, I adapt the parameters of the network.</li>
+  
+  <li>Subsequently, I use the validation set, in order to compare the values obtained by the network with the $\texttt{Correct Outputs}$ of this set. If the results coincide, the network is functional. On the other hand, if this is not the case, go back to step 1 and adapt the parameters so as to obtain an acceptable correspondence between the results.</li>
+</ol>
+ 
 
