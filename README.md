@@ -33,10 +33,11 @@ My model, as I have built it, is composed of several different structures and ca
 being considered as layer 0.
 
 1. The different layers:
-                        — x:= y0 ∈ R15: the input layer of the network.
-  — y1 ∈ R30: the first intermediate layer of the network. 
-  — y2 ∈ R20: the second intermediate layer of the network. 
-  — y:= y3 ∈ R10: the output layer of the network.
+                        <ul> <li>x:= y0 ∈ R15: the input layer of the network.</li>
+  <li>y1 ∈ R30: the first intermediate layer of the network.</li>
+  <li>y2 ∈ R20: the second intermediate layer of the network.</li>
+  <li>y:= y3 ∈ R10: the output layer of the network.</li>
+  </ul>
 2. The parameters associated with the different layers:
   — W1 ∈ R30×15: The matrix containing the weights of the links between the entry layer and the 1st intermediate layer.
   — W2 ∈ R20×30: The matrix containing the weights of the links between the 1st and 2nd intermediate layers.
