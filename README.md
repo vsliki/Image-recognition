@@ -51,17 +51,25 @@ being considered as layer 0.
       <li>α ∈ R the learning rate. (see Definition 2.5)</li>
     </ul>
   <li>Activation of neurons in the different layers:</li>
-  — σ: the Sigmoid activation function. o (see section 2.1.4) 
-  — σ ̃: the Softmax activation function.
+    <ul>
+      <li>σ: the Sigmoid activation function. o (see section 2.1.4) </li>
+      <li>σ ̃: the Softmax activation function.</li>
+     </ul>
   <li>Data circulating in the network:</li>
-  — v1 ∈ R30: the output value of the input layer. It corresponds to the weighted sum of the neurons of the input layer.
-  — v2 ∈ R20: the output value of the 1st intermediate layer. It corresponds to the weighted sum of the neurons of this layer.
-  — v:= v3 ∈ R10: the output value of the second intermediate layer. It corresponds to the weighted sum of the elements of this second intermediate layer.
+    <ul>
+      <li>v1 ∈ R30: the output value of the input layer. It corresponds to the weighted sum of the neurons of the input layer.</li>
+      <li>v2 ∈ R20: the output value of the 1st intermediate layer. It corresponds to the weighted sum of the neurons of this layer.</li>
+      <li>v:= v3 ∈ R10: the output value of the second intermediate layer. It corresponds to the weighted sum of the elements of this second intermediate layer.</li>
+    </ul>
   <li>Errors: (see section 2.2)</li>
-  — ek: errors propagated respectively to layers k = 1, 2, 3. 
-  — δk: deltas propagated respectively to layers k = 1, 2, 3.
+    <ul>
+      <li>ek: errors propagated respectively to layers k = 1, 2, 3. </li>
+      <li>δk: deltas propagated respectively to layers k = 1, 2, 3.</li>
+    </ul>
   <li>Network adaptations:</li>
-  — ∆Wk: adjustment of matrix Wk, k = 1, 2, 3. 
-  — ∆bk: adjustment of vector bk, k = 1, 2, 3.
+  <ul>
+    <li>∆Wk: adjustment of matrix Wk, k = 1, 2, 3. </li>
+    <li>∆bk: adjustment of vector bk, k = 1, 2, 3.</li>
+  </ul>
 </ol>
 
