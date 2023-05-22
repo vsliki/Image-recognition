@@ -9,18 +9,18 @@ The interest of this work, via this example, is to add errors to our images of f
 To improve the learning of the network, I analyzed the impact on it of the cost function used, by studying two of them: the sum of the square of the differences and the cross entropy. 
 Then, by adjusting the different parameters of the network, I allowed it to achieve good recognition of noisy images.
 
-## Introduction
+## 1. Introduction
 Artificial neural networks represent a subset of machine learning: science that allows computers to learn and adapt their operation without explicit instructions from a user, using algorithms and statistical models, to analyze and infer recurring patterns from data [2]. These models are very useful to us, even necessary, since they allow a spectacular advance whether in the field of medical imaging, in the implementation of artificial intelligence, or in the recognition and analysis of speech. However, their operation remains complex, which motivates this work. 
 I would like here to explain the construction and learning of such a network, theoretically as well as practically, in the context of image recognition. Thus, the interest of this work is to detail the construction of an artificial neural network from A to Z. Thanks to the work of Phil Kim [1], I was able to discover how to implement a simple neural network and then develop it in order to be able to arrive at my more complex network, allowing the recognition of images in the form of pixels.
 
 
 In order to structure the path to carry out the implementation, I will first recall the structure of a neural network as well as its functioning, then explain the learning method of such a network, via the resolution of an optimization problem using the **Stochastic Gradient Descent (SGD) algorithm**. I will define this problem according to two different cost functions: the **least squares method** and the **cross entropy** in order to compare them and choose the most optimal. Thereafter, I will describe step by step the Matlab codes which allowed me to create my model, then I will study the results obtained after modifying the various parameters of the network. Finally, I will conclude this work with the difficulties and questions I faced when designing this artificial intelligence.
 
-## Theoretical bases: Neural networks
-To explain how a neural network works, I will take the network I have implemented as an example, in order to become familiar with the notations used in  the implementation section.
+## 2. Theoretical bases: Neural networks
+To explain how a neural network works, I will take the network I have implemented as an example, in order to become familiar with the notations used in section 3.
 
 
-**Definition:** A neural network is a model whose goal is to build a function *φ*, called a <ins>learning function</ins>, which correctly classifies training data, in order to be able to accurately predict unknown data.
+**Definition 2.1:** A neural network is a model whose goal is to build a function *φ*, called a <ins>learning function</ins>, which correctly classifies training data, in order to be able to accurately predict unknown data.
 A neural network is organized into several layers of neurons: 
 1. The input layer.
 2. The intermediate layer or layers (hidden layers).
@@ -35,7 +35,7 @@ being considered as layer 0.
 <ol>
   <li>The different layers:</li>
    <ul> 
-    <li>x:= y0 ∈ R15: the input layer of the network.</li>
+    <li>$x:= y_0 \in \mathbb{R}^{15}$: the input layer of the network.</li>
     <li>y1 ∈ R30: the first intermediate layer of the network.</li>
     <li>y2 ∈ R20: the second intermediate layer of the network.</li>
     <li>y:= y3 ∈ R10: the output layer of the network.</li>
