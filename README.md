@@ -82,5 +82,15 @@ being considered as layer 0.
   <li>$\delta := \delta_3$.</li>
 </ul>
 
+### 2.1 Neural networks: description of its functioning:**
+#### 2.1.1 Testing, training and validation sets:
+To be able to create and train a neural network, I use a set of data, called a <ins>test set</ins>, composed of pairs in the form $\texttt{Input, Correct Output}$. This set is made up of two subsets:
+<ul>
+  <li>The <ins>training set</ins>: containing 75% of this data.</li>
+  <li>The <in>validation set</in>: containing the remaining 25%.</li>
+</ul>
+
+**Definition 2.2:** A <ins>training set</ins> is a finite set of known data used to perfect a model by adjusting its parameters, in order to obtain a good estimate of unknown data.
+**Definition 2.3:** A <ins>validation set</ins> is a finite set of data, used to verify the proper functioning of the network. The content of this set is different from the training set, but is nevertheless known.
 
 
