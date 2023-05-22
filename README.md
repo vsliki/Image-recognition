@@ -41,14 +41,15 @@ being considered as layer 0.
     <li>y:= y3 ∈ R10: the output layer of the network.</li>
    </ul>
   <li>The parameters associated with the different layers:</li>
-  — W1 ∈ R30×15: The matrix containing the weights of the links between the entry layer and the 1st intermediate layer.
-  — W2 ∈ R20×30: The matrix containing the weights of the links between the 1st and 2nd intermediate layers.
-  — W3 ∈ R10×20: The matrix containing the weights of the links between the second intermediate layer and the output layer.
-  — b1 ∈ R30: the bias added to the weighted sum of the elements of the input layer.
-  — b2 ∈ R20: the bias added to the weighted sum of the elements of the 1st intermediate layer.
-  — b3 ∈ R10: the bias added to the weighted sum of the elements of the second intermediate layer.
-  — α ∈ R the learning rate. (see Definition 2.5)
-  
+    <ul>
+      <li>W1 ∈ R30×15: The matrix containing the weights of the links between the entry layer and the 1st intermediate layer.</li>
+      <li>W2 ∈ R20×30: The matrix containing the weights of the links between the 1st and 2nd intermediate layers.</li>
+      <li>W3 ∈ R10×20: The matrix containing the weights of the links between the second intermediate layer and the output layer.</li>
+      <li>b1 ∈ R30: the bias added to the weighted sum of the elements of the input layer.</li>
+      <li>b2 ∈ R20: the bias added to the weighted sum of the elements of the 1st intermediate layer.</li>
+      <li>b3 ∈ R10: the bias added to the weighted sum of the elements of the second intermediate layer.</li>
+      <li>α ∈ R the learning rate. (see Definition 2.5)</li>
+    </ul>
   <li>Activation of neurons in the different layers:</li>
   — σ: the Sigmoid activation function. o (see section 2.1.4) 
   — σ ̃: the Softmax activation function.
