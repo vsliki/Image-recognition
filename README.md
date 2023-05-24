@@ -46,10 +46,10 @@ My model, as I have built it, is composed of several different structures and ca
       <li>$\delta_k$: deltas propagated respectively to layers $k = 1, 2, 3$.</li>
     </ul>
   <li>Network adaptations:</li>
-  <ul>
-    <li>$\Delta W_k$: adjustment of matrix $W_k$, $k = 1, 2, 3$. </li>
-    <li>$\Delta b_k$: adjustment of vector $b_k$, $k = 1, 2, 3$.</li>
-  </ul>
+    <ul>
+      <li>$\Delta W_k$: adjustment of matrix $W_k$, $k = 1, 2, 3$. </li>
+      <li>$\Delta b_k$: adjustment of vector $b_k$, $k = 1, 2, 3$.</li>
+    </ul>
 </ol>
 
 **Remark:** In order to standardize the data of this work with those of the implementation, I used the following notations:
