@@ -28,12 +28,12 @@ My model, as I have built it, is composed of several different structures and ca
       <li>$b_2 \in \mathbb{R}^{20}$: the bias added to the weighted sum of the elements of the 1st intermediate layer.</li>
       <li>$b_3 \in \mathbb{R}^{10}$: the bias added to the weighted sum of the elements of the second intermediate layer.</li>
       <li>$\alpha \in \mathbb{R}$: the learning rate. (see Definition 2.5)</li>
-   </ul>
+    </ul>
   <li>Activation of neurons in the different layers: (see section 2.1.4)</li>
     <ul>
       <li>$\sigma$: the Sigmoid activation function. </li>
       <li>$\tilde\sigma$: the Softmax activation function.</li>
-     </ul>
+    </ul>
   <li>Data circulating in the network:</li>
     <ul>
       <li>$v_1 \in \mathbb{R}^{30}$: the output value of the input layer. It corresponds to the weighted sum of the neurons of the input layer.</li>
