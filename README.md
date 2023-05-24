@@ -13,12 +13,12 @@ My model, as I have built it, is composed of several different structures and ca
 
 <ol>
   <li>The different layers:</li>
-   <ul> 
-    <li>$x:= y_0 \in \mathbb{R}^{15}$ : the input layer of the network.</li>
-    <li>$y_1 \in \mathbb{R}^{30}$ : the first intermediate layer of the network.</li>
-    <li>$y_2 \in \mathbb{R}^{20}$: the second intermediate layer of the network.</li>
-    <li>$y:= y_3 \in \mathbb{R}^{10}$: the output layer of the network.</li>
-   </ul>
+    <ul> 
+      <li>$x:= y_0 \in \mathbb{R}^{15}$ : the input layer of the network.</li>
+      <li>$y_1 \in \mathbb{R}^{30}$ : the first intermediate layer of the network.</li>
+      <li>$y_2 \in \mathbb{R}^{20}$: the second intermediate layer of the network.</li>
+      <li>$y:= y_3 \in \mathbb{R}^{10}$: the output layer of the network.</li>
+    </ul>
   <li>The parameters associated with the different layers:</li>
     <ul>
       <li>$W_1 \in \mathbb{R}^{30\times15}$: The matrix containing the weights between the input layer and the 1st intermediate layer.</li>
@@ -28,7 +28,7 @@ My model, as I have built it, is composed of several different structures and ca
       <li>$b_2 \in \mathbb{R}^{20}$: the bias added to the weighted sum of the elements of the 1st intermediate layer.</li>
       <li>$b_3 \in \mathbb{R}^{10}$: the bias added to the weighted sum of the elements of the second intermediate layer.</li>
       <li>$\alpha \in \mathbb{R}$: the learning rate. (see Definition 2.5)</li>
-    </ul>
+   </ul>
   <li>Activation of neurons in the different layers: (see section 2.1.4)</li>
     <ul>
       <li>$\sigma$: the Sigmoid activation function. </li>
