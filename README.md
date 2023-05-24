@@ -11,6 +11,7 @@ My model, as I have built it, is composed of several different structures and ca
 
 ![Representation of my neural network.](https://github.com/vsliki/Image-recognition/blob/main/NN.png)
 
+The different variables are given by: 
 <ol>
   <li>The different layers:</li>
       <ul> 
