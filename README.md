@@ -52,7 +52,7 @@ My model, as I have built it, is composed of several different structures and ca
   </ul>
 </ol>
 
-**Remark 2.2:** In order to standardize the data of this work with those of the implementation, I used the following notations:
+**Remark:** In order to standardize the data of this work with those of the implementation, I used the following notations:
 <ul>
   <li>$x := y_0$,</li>
   <li>$y := y_3$,</li>
